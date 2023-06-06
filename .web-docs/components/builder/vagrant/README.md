@@ -149,7 +149,7 @@ the Compress post-processor will not work with this builder.
 
 Sample for `hashicorp/precise64` with virtualbox provider.
 
-### JSON
+**JSON**
 
 ```json
 {
@@ -165,7 +165,7 @@ Sample for `hashicorp/precise64` with virtualbox provider.
 }
 ```
 
-### HCL2
+**HCL2**
 
 ```hcl
 source "vagrant" "example" {

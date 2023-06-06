@@ -104,7 +104,7 @@ Sometimes you may want to run several builds in a pipeline rather than running
 this post-processor inside a long-running Packer build. Here is an example of
 how to do this:
 
-### JSON
+**JSON**
 
 ```json
 {
@@ -133,7 +133,7 @@ how to do this:
 }
 ```
 
-### HCL2
+**HCL2**
 
 ```hcl
 source "null" "example" {
@@ -170,7 +170,7 @@ post-processor lets you do this.
 
 Specify overrides within the `override` configuration by provider name:
 
-### JSON
+**JSON**
 
 ```json
 {
@@ -184,7 +184,7 @@ Specify overrides within the `override` configuration by provider name:
 }
 ```
 
-### HCL2
+**HCL2**
 
 ```hcl
 ## This feature is not implemented in HCL.

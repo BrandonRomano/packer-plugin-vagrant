@@ -131,7 +131,7 @@ Failure to chain the post-processors together in this way will result in the
 wrong artifact being supplied to the Vagrant Cloud post-processor. This will
 likely cause the Vagrant Cloud post-processor to error and fail.
 
-### JSON
+**JSON**
 
 ```json
 {
@@ -162,7 +162,7 @@ likely cause the Vagrant Cloud post-processor to error and fail.
 }
 ```
 
-### HCL2
+**HCL2**
 
 ```hcl
 build {
@@ -204,7 +204,7 @@ Note that the Vagrant box specified in the Artifice post-processor `files` array
 must end in the `.box` extension. It must also be the first file in the array.
 Additional files bundled by the Artifice post-processor will be ignored.
 
-### JSON
+**JSON**
 
 ```json
 {
@@ -240,7 +240,7 @@ Additional files bundled by the Artifice post-processor will be ignored.
 }
 ```
 
-### HCL2
+**HCL2**
 
 ```hcl
 variable "cloud_token" {
