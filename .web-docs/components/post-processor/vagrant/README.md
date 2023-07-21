@@ -144,7 +144,7 @@ build {
   sources = [
     "source.null.example"
   ]
-  post-processors {  
+  post-processors {
     post-processor "artifice" {
       files = [
         "output-virtualbox-iso/vbox-example-disk001.vmdk",
@@ -154,8 +154,8 @@ build {
     post-processor "vagrant" {
       keep_input_artifact = true
       provider_override   = "virtualbox"
-    }  
-  }  
+    }
+  }
 }
 ```
 

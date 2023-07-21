@@ -1,7 +1,23 @@
-# Vagrant Plugin
 
 The Vagrant plugin integrates Packer with HashiCorp [Vagrant](https://www.vagrantup.com/), allowing you to use Packer to create development boxes.
 
-- [builder](/docs/builders/vagrant.mdx) - The Vagrant builder is intended for building new boxes from already-existing boxes.
+### Installation
+#cker 1.7.0 and later
 
-- [post-processor](/docs/post-processors/vagrant.mdx) - The Packer Vagrant post-processor takes a build and converts the artifact into a valid Vagrant box.
+packer {
+  required_plugins {
+    vagrant = {
+      version = "~> `"
+      source = "github.com/hashicorp/vagrant"
+    }
+  }
+}
+
+### Components
+
+#### Builders
+- [vagrant](/docs/builders/vagrant.mdx) - The Vagrant builder is intended for building new boxes from already-existing boxes.
+
+#### Post-Processor
+- [vagrant](/packer/integrations/hashicorp/vagrant/latest/components/post-processor/vagrant) - The Packer Vagrant post-processor takes a build and converts the artifact into a valid Vagrant box.
+- [vagrant-cloud](/packer/integrations/hashicorp/vagrant/latest/components/post-processor/vagrant-cloud) - The Vagrant Cloud post-processor enables the upload of Vagrant boxes to Vagrant Cloud.
