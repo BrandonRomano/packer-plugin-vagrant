@@ -16,7 +16,7 @@ packer {
 ### Components
 
 #### Builders
-- [vagrant](/docs/builders/vagrant.mdx) - The Vagrant builder is intended for building new boxes from already-existing boxes.
+- [vagrant](/packer/integrations/hashicorp/vagrant/latest/components/builder/vagrant) - The Vagrant builder is intended for building new boxes from already-existing boxes.
 
 #### Post-Processor
 - [vagrant](/packer/integrations/hashicorp/vagrant/latest/components/post-processor/vagrant) - The Packer Vagrant post-processor takes a build and converts the artifact into a valid Vagrant box.
