@@ -30,7 +30,7 @@ the Compress post-processor will not work with this builder.
 
 ## Configuration Reference
 
-### Required:
+### Required
 
 - `source_path` (string) - URL of the vagrant box to use, or the name of the
   vagrant box. `hashicorp/precise64`, `./mylocalbox.box` and
@@ -49,7 +49,7 @@ the Compress post-processor will not work with this builder.
   `source_box`, Packer will skip the Vagrant initialize and add steps, and
   simply launch the box directly using the global id.
 
-### Optional:
+### Optional
 
 <!-- Code generated from the comments of the Config struct in builder/vagrant/builder.go; DO NOT EDIT MANUALLY -->
 
@@ -139,7 +139,7 @@ the Compress post-processor will not work with this builder.
 - `output_vagrantfile` (string) - Output Vagrantfile
 
 - `package_include` ([]string) - Equivalent to setting the
-  [`--include`](https://www.vagrantup.com/docs/cli/package.html#include-x-y-z) option
+  [`--include`](https://developer.hashicorp.com/vagrant/docs/cli/package#include-x-y-z) option
   in `vagrant package`; defaults to unset
 
 <!-- End of code generated from the comments of the Config struct in builder/vagrant/builder.go; -->

@@ -2,16 +2,16 @@ Type: `vagrant`
 Artifact BuilderId: `mitchellh.post-processor.vagrant`
 
 The Packer Vagrant post-processor takes a build and converts the artifact into
-a valid [Vagrant](https://www.vagrantup.com) box, if it can. This lets you use
+a valid [Vagrant](https://developer.hashicorp.com/vagrant) box, if it can. This lets you use
 Packer to automatically create arbitrarily complex Vagrant boxes, and is in
 fact how the official boxes distributed by Vagrant are created.
 
 If you've never used a post-processor before, please read the documentation on
-[using post-processors](/packer/docs/templates/legacy_json_templates/post-processors) in templates.
+[using post-processors](https://developer.hashicorp.com/packer/docs/post-processors).
 This knowledge will be expected for the remainder of this document.
 
 Because Vagrant boxes are
-[provider-specific](https://www.vagrantup.com/docs/boxes/format), the
+[provider-specific](https://developer.hashicorp.com/vagrant/docs/boxes/format), the
 Vagrant post-processor is hardcoded to understand how to convert the artifacts
 of certain builders into proper boxes for their respective providers.
 
@@ -67,7 +67,7 @@ more details about certain options in following sections.
 
 - `output` (string) - The full path to the box file that will be created by
   this post-processor. This is a
-  [template engine](/packer/docs/templates/legacy_json_templates/engine). Therefore, you may use user
+  [template engine](https://developer.hashicorp.com/packer/docs/templates/legacy_json_templates/engine). Therefore, you may use user
   variables and template functions in this field. The following extra
   variables are also available in this engine:
 
@@ -86,8 +86,8 @@ more details about certain options in following sections.
   `lxc`, `scaleway`, `hyperv`, `parallels`, `aws`, or `google`.
 
 - `vagrantfile_template` (string) - Path to a template to use for the
-  Vagrantfile that is packaged with the box. This option supports the usage of the [template engine](/packer/docs/templates/legacy_json_templates/engine)
-  for JSON and the [contextual variables](/packer/docs/templates/hcl_templates/contextual-variables) for HCL2.
+  Vagrantfile that is packaged with the box. This option supports the usage of the [template engine](https://developer.hashicorp.com/packer/docs/templates/legacy_json_templates/engine)
+  for JSON and the [contextual variables](https://developer.hashicorp.com/packer/docs/templates/hcl_templates/contextual-variables) for HCL2.
 
 - `vagrantfile_template_generated` (boolean) - By default, Packer will
   exit with an error if the file specified using the
@@ -216,8 +216,8 @@ want the final Vagrant box as the result. If you wish to keep the input
 artifact (the raw virtual machine, for example), then you must configure Packer
 to keep it.
 
-Please see the [documentation on input
-artifacts](/packer/docs/templates/legacy_json_templates/post-processors#input-artifacts) for more information.
+Please see the [documentation on input artifacts](https://developer.hashicorp.com/packer/docs/templates/legacy_json_templates/post-processors#input-artifacts)
+for more information.
 
 ### Docker
 
