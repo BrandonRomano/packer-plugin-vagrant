@@ -2,18 +2,23 @@
 The Vagrant plugin integrates Packer with HashiCorp [Vagrant](https://www.vagrantup.com/), allowing you to use Packer to create development boxes.
 
 ### Installation
-
-Packer 1.7.0 and later
+To install this plugin add this code into your Packer configuration and run [packer init](/packer/docs/commands/init)
 
 ```hcl
 packer {
   required_plugins {
     vagrant = {
-      version = "~> `"
+      version = "~> 1"
       source = "github.com/hashicorp/vagrant"
     }
   }
 }
+```
+
+Alternatively, you can use `packer plugins install` to manage installation of this plugin.
+
+```sh
+packer plugins install github.com/hashicorp/vagrant
 ```
 
 ### Components
