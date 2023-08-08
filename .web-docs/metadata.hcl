@@ -3,7 +3,7 @@
 integration {
   name = "Vagrant"
   description = "The Vagrant multi-component plugin can be used with HashiCorp Packer to create custom images."
-  identifier = "packer/BrandonRomano/vagrant"
+  identifier = "packer/hashicorp/vagrant"
   component {
     type = "builder"
     name = "Vagrant"
